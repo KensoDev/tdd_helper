@@ -1,6 +1,26 @@
 # TddHelper
 
-TODO: Write a gem description
+This gem was intended to help you create the files in your lib directory for your rails projects when you are using TDD.
+
+## What does that mean?
+I can't count how many times I type this in the console
+
+```
+mkdir -p lib/scoring_system
+mkdir -p spec/lib/scoring_system
+touch lib/scoring_system/base.rb
+touch spec/lib/scoring_system/base_spec.rb
+```
+
+## What does it do?
+
+All you need to do is to type:
+
+```
+tdd scoring/base
+```
+
+This will create the file (if doesn't exist), name the class (with the scoring module), create the spec file, require the class and put a pending spec
 
 ## Installation
 
@@ -15,10 +35,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install tdd_helper
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
