@@ -14,4 +14,12 @@ Gem::Specification.new do |gem|
   gem.name          = "tdd_helper"
   gem.require_paths = ["lib"]
   gem.version       = TddHelper::VERSION
+  gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+
+  # specify any dependencies here; for example:
+  gem.add_dependency 'active_support'
+
+  gem.add_development_dependency 'rake'
+  gem.add_development_dependency 'rspec'
+  gem.add_development_dependency 'simplecov'
 end
