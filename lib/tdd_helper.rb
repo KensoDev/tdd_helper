@@ -1,5 +1,6 @@
 require "tdd_helper/version"
+require "tdd_helper/runner"
 
 module TddHelper
-  # Your code goes here...
+  
 end
